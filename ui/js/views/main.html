@@ -1,0 +1,9 @@
+<div class="dbSelection">
+  <h6>Available</h6>
+  <div ng-repeat="db in main.dbList" class="dbItem">
+    <button class="btn btn-primary dbName" ng-click="main.getCollections($index)">{{db.name}}</button>
+    <div class="dbTables">
+      <button ng-repeat="collection in db.collections" class="btn btn-primary tableItem">{{collection.collectionName}}</button>
+    </div>
+  </div>
+</div>

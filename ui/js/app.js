@@ -13,8 +13,8 @@
             vm.getCollections = getCollections;
 
             mongoClient.connect({
-                url: '104.131.64.135',
-                port: '27017'
+                url: 'someAddress',
+                port: 'somePort'
             }).then(function resolve() {
                 getDBList();
             }, function reject(err) {
